@@ -1,0 +1,14 @@
+header{
+    height: 10vh;
+    width: 100vw;
+    background-color: beige;
+    nav ul{
+        margin: auto;
+        height: 10vh;
+        width: 500px;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
