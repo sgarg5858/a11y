@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+
+  focusToMainContent()
+  {
+    let element = document.getElementById('main-content')
+    element?.setAttribute('tabindex','-1') // You can set tabindex in HTML too than in JS
+    element?.focus()
+    
+  }
 }

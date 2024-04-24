@@ -3,3 +3,15 @@ html,body,ul{
     margin: 0;
     padding: 0;
 }
+.visually-hidden:not(:focus):not(:active){
+    position: absolute;
+    width: 1px;
+    overflow: hidden;
+    clip:rect(0,0,0,0);
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: auto;
+
+}
