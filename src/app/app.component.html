@@ -1,5 +1,5 @@
-<app-header></app-header>
-<main id="main-content">
+<app-header (moveFocusToMainElement)="focusMainElement()"></app-header>
+<main #mainContent tabindex="-1">
   <router-outlet></router-outlet>
 </main>
 <aside>Aside</aside>

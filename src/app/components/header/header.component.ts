@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -8,11 +8,13 @@ import { Component } from '@angular/core';
 export class HeaderComponent {
 
 
+  @Output() moveFocusToMainElement = new EventEmitter();
   focusToMainContent()
   {
-    let element = document.getElementById('main-content')
-    element?.setAttribute('tabindex','-1') // You can set tabindex in HTML too than in JS
-    element?.focus()
+    this.moveFocusToMainElement.emit();
+    // let element = document.getElementById('main-content')
+    // element?.setAttribute('tabindex','-1') // You can set tabindex in HTML too than in JS
+    // element?.focus()
     
   }
 }
